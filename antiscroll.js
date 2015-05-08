@@ -9,6 +9,10 @@
       if ($(this).data('antiscroll')) {
         $(this).data('antiscroll').destroy();
       }
+      
+      if (options === 'destroy') {
+        return;
+      }
 
       $(this).data('antiscroll', new $.Antiscroll(this, options));
     });
